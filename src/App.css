@@ -32,7 +32,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
+  background-color: #150324 !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
 }
@@ -82,6 +82,12 @@ p.success {
 p.danger {
 	color: red;
 }
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 25px;
+}
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
@@ -93,7 +99,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #2e082e;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
@@ -143,11 +149,13 @@ span.navbar-text {
 .social-icon a:hover::before {
     transform: scale(1);
 }
+
 .social-icon a img {
-	width: 40%;
+	width: 55%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
+
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
@@ -235,7 +243,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  background-image: url('./assets/Image-paul-svg/bosque-paisaje-atalaya-papel-pintado-1920x1080_48.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -244,7 +252,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(72, 46, 189, 0.502) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -307,7 +315,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #151515;
+  background: rgb(43, 9, 59);
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -341,11 +349,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+.icons {
+  width: 150px;
+  height: 150px;
+  transition: all 300ms;
+}
+
+.icons:hover {
+  transform: scale(1.1);
+}
+
 /************ Projects Css ************/
 .project {
-  padding: 80px 0;
+  padding: 120px 0;
   position: relative;
-  background-color: black;
+  background-color: #150324;
 }
 .project h2 {
 	font-size: 45px;
@@ -458,6 +476,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 15px;
   letter-spacing: 0.8px;
 }
+
+.proj-txtx a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.proj-txtx a:hover {
+  color: #000;
+}
+
 .background-image-right {
   top: 20%;
   position: absolute;
@@ -467,7 +495,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;
@@ -616,4 +644,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+@media (max-width: 770px) {
+  
+  .newsletter-bx {
+    width: auto;
+    padding: 40px 65px;
+    flex-direction: column;
+  }
+  
+  .newsletter-bx h3 {
+    text-align: center;
+  }
+
+  .new-email-bx {
+    flex-direction: column;
+  } 
+
+  .new-email-bx button {
+    margin-top: 15px;
+  } 
+  
 }
