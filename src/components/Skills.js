@@ -41,7 +41,7 @@ export const Skills = () => {
                             <h2>
                                 Skills
                             </h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna neque, pharetra eu hendrerit at, vehicula sed enim.<br></br> Nunc mattis posuere turpis, ut luctus lorem sollicitudin quis.</p>
+                            <p>It these are the technologies that I use in my projects and that they are always increasing more to expand my skills like professional. Technologies oriented to front end developing, back-end (noSQL) and software developing.</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={iconReact} alt="Image" className="icons" />
