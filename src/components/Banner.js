@@ -14,6 +14,8 @@ export const Banner = () => {
     const [index, setIndex] = useState(1);
     const period = 2000;
 
+    console.log(index)
+
     useEffect(() => {
         let ticker = setInterval(() => {
             tick();
